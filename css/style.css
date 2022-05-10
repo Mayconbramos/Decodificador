@@ -1,0 +1,223 @@
+body{
+    background-color: #dff2ff;
+}
+
+header{
+
+    padding: 23px;
+    background : linear-gradient(#8f8fc5,#dff2ff);
+}
+
+.logo-decoder{
+
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    color: #fafafa;
+    text-shadow: 10px 5px 5px rgb(165, 165, 165);
+    user-select: none;
+}
+
+/* parte da área de texto */
+
+form{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+textarea{
+
+    width: 537px;
+    height: 375px;
+    border-radius: 2%;
+    background-color: #dff2ff;
+    resize: none;
+    padding: 5px;
+    font-size: 18px;
+
+}
+
+/* Área Digitavel */
+
+#texto-area{
+
+    border: none;
+    float: left;
+
+}
+
+#texto-area:focus{
+
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    
+}
+
+#texto-area::placeholder{
+
+    font-size: 18px;
+    font-weight: bold;
+    color: #355e9b;
+}
+
+/* Texto convertido */
+
+#texto-convertido{
+
+    border-radius: 2%;
+    border-color: #000000;
+    float: right;
+    padding: 5px;
+
+}
+
+#texto-convertido::placeholder{
+
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 2.5em;
+    padding-top: 11em;
+    color: #355e9b;
+    background-image: url(imagem.png);    
+    background-size: 50%;
+    background-position:center 50px;
+    background-repeat: no-repeat;
+    
+
+}
+
+.alerta{
+
+    font-size: 15px;
+    margin-left:1%;
+    margin-top: 2px;
+    display: inline-block;
+    user-select: none;
+}
+
+/* botões */
+
+input{
+
+    font-weight: bold;
+    color: white;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background: #355e9b;
+    transition: 1s all;
+    cursor: pointer;
+
+}
+
+input:hover{
+
+    background: #1d3e70;
+    transform: scale(1.2);
+}
+
+.botao-criptografar{
+
+    margin-top: 5px;
+    margin-left: 1%;
+
+}
+
+.botao-descriptografar{
+
+    margin-top: 5px;
+    margin-left: 1%;
+
+
+}
+
+
+/* alerta de texto copiado*/
+#mensagem-copiado{
+
+    float: right;
+    margin-right: 40px;
+    margin-top: 5px;
+    font-weight: bolder;
+    
+}
+
+.botao-copiar{
+
+    float: right;
+    margin-right: 1%;
+    margin-top: 5px;
+}
+
+
+/* rodapé */
+
+footer{
+
+    padding: 50px;
+    background : linear-gradient(#dff2ff,#8f8fc5);
+
+}
+
+.creditos{
+
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+@media screen and (max-width: 800px){
+    form{
+        width: 100%;
+    }
+    fieldset{
+        width: 50%;
+        margin: auto;
+    }
+
+    .texto{
+
+        width: 100%;
+    }
+
+    textarea{
+
+        width: auto;
+
+    }
+
+    #texto-convertido::placeholder{
+
+
+        width: 90%;
+        padding-left: 1em;
+        font-size: 20px;
+        padding-top: 100%;
+        background-size: 80%;
+        
+    }
+
+
+
+    .botao-criptografar{
+
+        width: 100px;
+
+    }
+    .botao-descriptografar{
+
+        width: 120px;
+        margin-left: 30px;
+    }
+
+    .botao-copiar{
+
+        width: 100px;
+
+    }
+
+}
